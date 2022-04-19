@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+<groups>
+
+<define name="group1">
+<include name="sanity"></include>
+<include name="regression"></include>
+</define>
+
+<define name="group2">
+<include name="sanity"></include>
+<include name="smoke"></include></define>
+
+<define name="group3">
+<include name="regression"></include>
+<include name="smoke"></include>
+</define>
+
+<run>
+<include name="group2"></include>
+<exclude name="group3"></exclude>
+</run>
+
+</groups>
+    <classes>
+      <class name="org.test.Groups"/>
+    </classes>
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

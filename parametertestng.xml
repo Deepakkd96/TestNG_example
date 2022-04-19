@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test1">
+<parameter name="username" value="deepak1996"></parameter>
+<parameter name="password" value="deepak@1996"></parameter>
+    <classes>
+      <class name="org.test.AdacLogin"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test thread-count="5" name="Test2">
+<parameter name="checkin" value="04/05/2022"></parameter>
+<parameter name="checkout" value="10/05/2022"></parameter>
+    <classes>
+      <class name="org.test.AdacSearch"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test thread-count="5" name="Test3">
+    <classes>
+      <class name="org.test.adacSelect"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+ <test thread-count="5" name="Test4">
+<parameter name="fstname" value="deepak"></parameter>
+<parameter name="scndname" value="kannan"></parameter>
+<parameter name="address" value="chennai,tamilnadu,india"></parameter>
+<parameter name="cc" value="1234567890123456"></parameter>
+<parameter name="ccv" value="123"></parameter>
+    <classes>
+      <class name="org.test.AdacBook"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+ <test thread-count="5" name="Test5">
+    <classes>
+      <class name="org.test.AdacConfirm"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+
+
+
+
+</suite> <!-- Suite -->
+
